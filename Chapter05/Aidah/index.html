@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>membuat wibsite dengan Tailwind</title>
+    <!-- menambahkan koneksi HTML ke tailwind -->
+    <!-- menambahkan background images -->
+    <!-- menambkan posisi ukuranya -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container min-h-screen bg-[url('img/kantong.png')] bg-center bg-cover px-8 py-4 relative">
+      <!-- membuat class name flex pada nav -->
+      <nav class="flex items-center">
+        <img src="img/foto lebah.png" alt="logo" class="w-40 sm:w-24 cursor-pointer" />
+        <!-- atur posisi logo kiri,menu tangan dan card icon di sebelah kanan -->
+        <ul class="flex-1 text-center">
+          <!-- atur warna text agar jadi putih tanpa underline -->
+          <!-- atur posisi menjadi sejajar -->
+          <!-- atur margin setelah inlin-block dan padding text-white -->
+          <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white">home</a></li>
+          <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white">about</a></li>
+          <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white">features</a></li>
+          <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white">contact</a></li>
+        </ul>
+        <img src="img/smile.png" alt="keranjang" class="w-8 cursor-pointer" />
+      </nav>
+      <!-- membuat text -->
+      <div class="text-white mt-48">
+        <h1 class="text-6xl font-semibold leading-normal">
+          Belajar cepat <br />
+          pemograman webiste tailwind
+          <span class="font-light">15 menit saja</span>
+        </h1>
+        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, rerum fugit minima sint officiis aliquid.</p>
+        <div class="mt-10">
+          <a href="#" class="bg-yellow-300 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border border-transparent">Mari Belajar</a>
+          <a href="#">Download Modulnya</a>
+        </div>
+        <div><img src="img/programer.png" class="w-full xl:w-1/2 alt=""></div>
+      </div>
+    </div>
+  </body>
+</html>
